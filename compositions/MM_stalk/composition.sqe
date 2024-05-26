@@ -1,0 +1,140 @@
+version=54;
+center[]={4003.8423,5,3463.7056};
+class items
+{
+	items=3;
+	class Item0
+	{
+		dataType="Group";
+		side="East";
+		class Entities
+		{
+			items=4;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-1.6533203,0.0014390945,2.1713867};
+				};
+				side="East";
+				flags=7;
+				class Attributes
+				{
+					rank="SERGEANT";
+					init="BIS_grpStalkers = group this;";
+				};
+				id=65;
+				type="O_recon_TL_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Male02PER";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=0.97000003;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={3.3469238,0.0014390945,-2.828125};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.44999999;
+					rank="CORPORAL";
+				};
+				id=66;
+				type="O_recon_M_F";
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-6.6530762,0.0014390945,-2.828125};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+				};
+				id=67;
+				type="O_recon_medic_F";
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={8.3469238,0.0014390945,-7.828125};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+				};
+				id=68;
+				type="O_recon_F";
+			};
+		};
+		class Attributes
+		{
+		};
+		id=64;
+	};
+	class Item1
+	{
+		dataType="Comment";
+		class PositionInfo
+		{
+			position[]={-6.5283203,0,4.4375};
+		};
+		title="BIS_fnc_stalk";
+		description="Parameter:" \n "[stalker, stalked, refresh, radius, endCondition, endDestination] spawn BIS_fnc_stalk" \n "" \n "Beispiele:" \n "_stalking = [BIS_grpStalkers, BIS_grpPlayer] spawn BIS_fnc_stalk;" \n "_stalking = [grp1, group player, nil, nil, { player distance BIS_Heli < 100 }, ""BIS_mrkRetreatMarker""] spawn BIS_fnc_stalk;" \n "";
+		id=69;
+	};
+	class Item2
+	{
+		dataType="Trigger";
+		position[]={4.7927246,0,4.9523926};
+		class Attributes
+		{
+			condition="time > 10";
+			onActivation="_stalking = [BIS_grpStalkers, group ([allPlayers, BIS_grpStalkers] call BIS_fnc_nearestPosition)] spawn BIS_fnc_stalk;" \n "";
+			sizeA=0;
+			sizeB=0;
+		};
+		id=70;
+		type="EmptyDetector";
+	};
+};

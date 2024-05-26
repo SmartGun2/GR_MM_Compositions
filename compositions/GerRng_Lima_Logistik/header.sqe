@@ -1,0 +1,11 @@
+version=54;
+name="GerRng_Lima_Logistik";
+author="SmartGun";
+category="EdSubcat_Default";
+requiredAddons[]=
+{
+	"A3_Structures_F_Bootcamp_VR_Helpers",
+	"CUP_WarfareBuildings",
+	"CUP_StandaloneTerrains_Core_Faction",
+	"GerRng_"
+};

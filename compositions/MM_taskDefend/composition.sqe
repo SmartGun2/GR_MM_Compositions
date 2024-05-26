@@ -1,0 +1,126 @@
+version=54;
+center[]={3981.6685,5,3452.8037};
+class items
+{
+	items=2;
+	class Item0
+	{
+		dataType="Group";
+		side="East";
+		class Entities
+		{
+			items=4;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-1.6584473,0.0014390945,4.0212402};
+				};
+				side="East";
+				flags=7;
+				class Attributes
+				{
+					rank="SERGEANT";
+					init="[group this, position this, 75, 3, 0.3, 0] call CBA_fnc_taskDefend;";
+				};
+				id=8;
+				type="O_recon_TL_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Male02PER";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=0.97000003;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={3.342041,0.0014390945,-0.97851563};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.44999999;
+					rank="CORPORAL";
+				};
+				id=9;
+				type="O_recon_M_F";
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-6.657959,0.0014390945,-0.97851563};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+				};
+				id=10;
+				type="O_recon_medic_F";
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={8.342041,0.0014390945,-5.9785156};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+				};
+				id=11;
+				type="O_recon_F";
+			};
+		};
+		class Attributes
+		{
+		};
+		id=7;
+	};
+	class Item1
+	{
+		dataType="Comment";
+		class PositionInfo
+		{
+			position[]={-1.7094727,0,0.14428711};
+		};
+		title="CBA_fnc_taskDefend";
+		description="Init des Leaders:" \n "[this] call CBA_fnc_taskDefend;" \n "Parameter:" \n "// [_group, _position, _radius, _threshold, _patrol, _hold] call CBA_fnc_taskDefend; " \n "Beispiel:" \n "[group this, position this, 75, 3, 0.3, 0] call CBA_fnc_taskDefend;";
+		id=12;
+	};
+};

@@ -1,0 +1,14 @@
+version=54;
+center[]={1996,7.6639977,7420};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		name="server";
+		init="server action [""lightOn"", vehicle car1];";
+		id=1344;
+		type="Logic";
+	};
+};

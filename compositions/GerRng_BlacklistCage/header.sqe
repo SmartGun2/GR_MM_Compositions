@@ -1,0 +1,10 @@
+version=54;
+name="GerRng_BlacklistCage";
+author="SmartGun";
+category="EdSubcat_Default";
+requiredAddons[]=
+{
+	"A3_Structures_F_Walls",
+	"A3_Structures_F_Mil_Helipads",
+	"Desert"
+};

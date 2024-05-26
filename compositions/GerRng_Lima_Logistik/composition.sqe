@@ -1,0 +1,84 @@
+version=54;
+center[]={1422.0673,5,5136.1494};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Layer";
+		name="GR Lima Logistik";
+		class Entities
+		{
+			items=3;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-2.0101318,0.00050020218,2.730957};
+					angles[]={0,4.718358,0};
+				};
+				side="Empty";
+				flags=5;
+				class Attributes
+				{
+					name="limasupplypointstaticmarker";
+				};
+				id=92;
+				type="VR_Area_01_square_2x2_grey_F";
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={1.5048828,1.4041967,3.6337891};
+					angles[]={-0,0.01998402,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="limasupplypointstatic";
+				};
+				id=91;
+				type="USMC_WarfareBVehicleServicePoint";
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.50488281,2.3134775,-6.3662109};
+					angles[]={-0,4.6946392,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="limasupplypointmobile";
+				};
+				id=376;
+				type="GerRng_Lkw15t_Box_W";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ammoBox";
+						expression="[_this,_value] call bis_fnc_initAmmoBox;";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="[[[[""FirstAidKit""],[10]],[[],[]],[[],[]],[[],[]]],false]";
+							};
+						};
+					};
+					nAttributes=1;
+				};
+			};
+		};
+		id=1072;
+	};
+};

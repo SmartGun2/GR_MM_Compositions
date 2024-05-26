@@ -1,0 +1,28 @@
+version=54;
+name="GerRng_Fuhrpark_Single";
+author="SmartGun";
+category="EdSubcat_Default";
+requiredAddons[]=
+{
+	"A3_Armor_F_Tank_LT_01",
+	"ace_realisticnames",
+	"GerRng_",
+	"A3_Soft_F_Enoch_Offroad_01",
+	"A3_Soft_F_Enoch_Van_02",
+	"CUP_WheeledVehicles_Stryker",
+	"CFP_B_USARMY_WDL",
+	"CUP_WheeledVehicles_Boxer",
+	"CFP_B_DEARMY_WDL_WDL",
+	"A3_Armor_F_Exp_APC_Tracked_01",
+	"A3_Soft_F_Exp_LSV_01",
+	"cfp_b_gbarmy_wdl",
+	"A3_Soft_F_Exp_UGV_01",
+	"A3_Weapons_F_Ammoboxes",
+	"ace_rearm",
+	"ace_dragging",
+	"CUP_WheeledVehicles_TowingTractor",
+	"A3_Soft_F_Quadbike_01",
+	"kat_misc",
+	"cfp_vehicles",
+	"A3_Armor_F_Exp_APC_Wheeled_01"
+};
